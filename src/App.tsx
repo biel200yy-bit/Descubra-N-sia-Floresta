@@ -1,0 +1,198 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import React, { useState, useEffect } from 'react';
+import { Navbar } from './components/Navbar';
+import { HeroSection } from './components/HeroSection';
+import { FeaturedSection } from './components/FeaturedSection';
+import { AttractionsCatalog } from './components/AttractionsCatalog';
+import { AttractionDetailModal } from './components/AttractionDetailModal';
+import { HistorySection } from './components/HistorySection';
+import { InteractiveMapSection } from './components/InteractiveMapSection';
+import { TouristRoutesSection } from './components/TouristRoutesSection';
+import { CultureSection } from './components/CultureSection';
+import { CommunityParticipationModal } from './components/CommunityParticipationModal';
+import { AboutProjectSection } from './components/AboutProjectSection';
+import { Footer } from './components/Footer';
+
+import { ATTRACTIONS, Attraction } from './data/attractions';
+import { INITIAL_COMMUNITY_CONTRIBUTIONS, CommunityContribution } from './data/culture';
+
+export default function App() {
+  const [activeTab, setActiveTab] = useState<string>('inicio');
+  const [selectedAttraction, setSelectedAttraction] = useState<Attraction | null>(null);
+  const [isContributionModalOpen, setIsContributionModalOpen] = useState(false);
+
+  // Search & category passed from Hero into Catalog
+  const [activeCategoryFilter, setActiveCategoryFilter] = useState<string>('todas');
+  const [activeSearchQuery, setActiveSearchQuery] = useState<string>('');
+
+  // Accessibility state
+  const [textSize, setTextSize] = useState<'normal' | 'large'>('normal');
+  const [highContrast, setHighContrast] = useState<boolean>(false);
+
+  // Community contributions stored in localStorage
+  const [communityContributions, setCommunityContributions] = useState<CommunityContribution[]>(() => {
+    try {
+      const saved = localStorage.getItem('nisia_floresta_contributions');
+      if (saved) {
+        return JSON.parse(saved);
+      }
+    } catch (e) {
+      console.error('Error loading stored contributions:', e);
+    }
+    return INITIAL_COMMUNITY_CONTRIBUTIONS;
+  });
+
+  const handleSaveContribution = (newContrib: CommunityContribution) => {
+    const updated = [newContrib, ...communityContributions];
+    setCommunityContributions(updated);
+    try {
+      localStorage.setItem('nisia_floresta_contributions', JSON.stringify(updated));
+    } catch (e) {
+      console.error('Error saving contribution to localStorage:', e);
+    }
+  };
+
+  const handleSearchFromHero = (query: string) => {
+    setActiveSearchQuery(query);
+    setActiveCategoryFilter('todas');
+    setActiveTab('atracoes');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleCategoryFromHero = (category: string) => {
+    setActiveCategoryFilter(category);
+    setActiveSearchQuery('');
+    setActiveTab('atracoes');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleSelectAttractionById = (id: string) => {
+    const target = ATTRACTIONS.find((a) => a.id === id);
+    if (target) {
+      setSelectedAttraction(target);
+    }
+  };
+
+  return (
+    <div
+      className={`min-h-screen flex flex-col transition-all ${
+        highContrast ? 'high-contrast' : ''
+      } ${textSize === 'large' ? 'text-lg' : 'text-base'}`}
+    >
+      {/* Screen Reader Skip Link */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:p-3 focus:bg-sky-900 focus:text-white focus:rounded-md focus:shadow-lg"
+      >
+        Pular diretamente para o conteúdo principal
+      </a>
+
+      {/* Main Top Navigation */}
+      <Navbar
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        onOpenContribution={() => setIsContributionModalOpen(true)}
+        textSize={textSize}
+        setTextSize={setTextSize}
+        highContrast={highContrast}
+        setHighContrast={setHighContrast}
+      />
+
+      {/* Main Content Area */}
+      <main id="main-content" className="flex-1">
+        {activeTab === 'inicio' && (
+          <>
+            <HeroSection
+              onSearch={handleSearchFromHero}
+              onSelectCategory={handleCategoryFromHero}
+              onNavigateTo={(tab) => {
+                setActiveTab(tab);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            />
+            <FeaturedSection
+              attractions={ATTRACTIONS}
+              onSelectAttraction={(attr) => setSelectedAttraction(attr)}
+              onViewAll={() => {
+                setActiveTab('atracoes');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            />
+            <HistorySection />
+            <InteractiveMapSection
+              attractions={ATTRACTIONS}
+              onSelectAttraction={(attr) => setSelectedAttraction(attr)}
+            />
+            <CultureSection
+              onOpenContribution={() => setIsContributionModalOpen(true)}
+              communityContributions={communityContributions}
+            />
+            <TouristRoutesSection
+              onSelectAttractionById={handleSelectAttractionById}
+            />
+          </>
+        )}
+
+        {activeTab === 'atracoes' && (
+          <AttractionsCatalog
+            attractions={ATTRACTIONS}
+            initialCategory={activeCategoryFilter}
+            initialSearchQuery={activeSearchQuery}
+            onSelectAttraction={(attr) => setSelectedAttraction(attr)}
+          />
+        )}
+
+        {activeTab === 'historia' && <HistorySection />}
+
+        {activeTab === 'cultura' && (
+          <CultureSection
+            onOpenContribution={() => setIsContributionModalOpen(true)}
+            communityContributions={communityContributions}
+          />
+        )}
+
+        {activeTab === 'roteiros' && (
+          <TouristRoutesSection
+            onSelectAttractionById={handleSelectAttractionById}
+          />
+        )}
+
+        {activeTab === 'mapa' && (
+          <InteractiveMapSection
+            attractions={ATTRACTIONS}
+            onSelectAttraction={(attr) => setSelectedAttraction(attr)}
+          />
+        )}
+
+        {activeTab === 'sobre' && <AboutProjectSection />}
+      </main>
+
+      {/* Footer */}
+      <Footer
+        onNavigateTo={(tab) => {
+          setActiveTab(tab);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        onOpenContribution={() => setIsContributionModalOpen(true)}
+      />
+
+      {/* Detailed Attraction Modal */}
+      <AttractionDetailModal
+        attraction={selectedAttraction}
+        onClose={() => setSelectedAttraction(null)}
+        onSelectRelated={(related) => setSelectedAttraction(related)}
+      />
+
+      {/* Community Contribution Modal */}
+      <CommunityParticipationModal
+        isOpen={isContributionModalOpen}
+        onClose={() => setIsContributionModalOpen(false)}
+        onSubmitContribution={handleSaveContribution}
+      />
+    </div>
+  );
+}
