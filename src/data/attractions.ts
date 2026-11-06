@@ -104,11 +104,11 @@ export const ATTRACTIONS: Attraction[] = [
       'É ponto preferido de famílias com crianças devido à pouca profundidade nas margens de areia alva.',
       'Abriga atividades náuticas não poluentes como stand-up paddle, tirolesa aquática e pedalinhos em formato de cisne.'
     ],
-    primaryImage: '/src/assets/images/lagoa_arituba_bonfim_1792776863783.jpg',
-    imageAlt: 'Águas cristalinas e píer rústico de madeira na Lagoa de Arituba em Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_13008830.png',
+    imageAlt: 'Vista aérea panorâmica da Lagoa de Arituba em Nísia Floresta com orla de quiosques, pedalinhos e águas azuis',
     gallery: [
-      '/src/assets/images/lagoa_arituba_bonfim_1792776863783.jpg',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_13008830.png',
+      '/src/assets/images/lagoa_de_arituba_nova_1793985909690.jpg'
     ],
     location: {
       address: 'Estrada da Lagoa de Arituba, próximo à praia de Camurupim',
@@ -153,11 +153,11 @@ export const ATTRACTIONS: Attraction[] = [
       'Durante a maré alta, as ondas quebram com força na barreira exterior dos arrecifes gerando o efeito "blowhole" ou jatos de spray marinho.',
       'As piscinas formadas são tão calmas que parecem uma imensa lagoa de água salina aquecida pelo sol tropical.'
     ],
-    primaryImage: '/src/assets/images/praia_camurupim_arrecifes_1792776864492.jpg',
-    imageAlt: 'Arrecifes de arenito e piscinas naturais na Praia de Camurupim',
+    primaryImage: '/assets/aistudio/image_ff274b7f.png',
+    imageAlt: 'Vista aérea panorâmica da orla e arrecifes de arenito com piscinas naturais na Praia de Camurupim',
     gallery: [
-      '/src/assets/images/praia_camurupim_arrecifes_1792776864492.jpg',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_ff274b7f.png',
+      '/src/assets/images/praia_camurupim_nova_1793985909958.jpg'
     ],
     location: {
       address: 'Avenida Beira Mar, Praia de Camurupim',
@@ -251,11 +251,11 @@ export const ATTRACTIONS: Attraction[] = [
       'A arquitetura segue o padrão funcional britânico com trilhos de ferro fundido originais que ainda afloram em trechos do solo.',
       'Hoje abriga feiras de produtos artesanais e eventos comunitários valorizando os saberes locais.'
     ],
-    primaryImage: '/src/assets/images/hero_nisia_floresta_1792776861527.jpg',
-    imageAlt: 'Estação ferroviária histórica de Papary em Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_f52856f9.png',
+    imageAlt: 'Fachada histórica restaurada da Estação Ferroviária de Papary (1881) em Nísia Floresta',
     gallery: [
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg',
-      '/src/assets/images/baoba_patrimonio_nisia_1792776863969.jpg'
+      '/assets/aistudio/image_f52856f9.png',
+      '/assets/aistudio/image_b43c8050.png'
     ],
     location: {
       address: 'Rua da Estação, Centro',
@@ -300,10 +300,10 @@ export const ATTRACTIONS: Attraction[] = [
       'Foi amiga pessoal e interlocutora intelectual de figuras ilustres como Auguste Comte e Alexandre Dumas.',
       'Adotou o pseudônimo "Nísia Floresta Brasileira Augusta" para afirmar com orgulho suas raízes norte-rio-grandenses e nacionais perante o mundo.'
     ],
-    primaryImage: '/src/assets/images/baoba_patrimonio_nisia_1792776863969.jpg',
-    imageAlt: 'Memorial e Museu Nísia Floresta dedicado à memória da escritora potiguar',
+    primaryImage: '/assets/aistudio/image_cd4e5206.png',
+    imageAlt: 'Fachada histórica amarela do Museu e Memorial Nísia Floresta',
     gallery: [
-      '/src/assets/images/baoba_patrimonio_nisia_1792776863969.jpg',
+      '/assets/aistudio/image_cd4e5206.png',
       '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
@@ -350,10 +350,10 @@ export const ATTRACTIONS: Attraction[] = [
       'É classificada como um reservatório hidrológico natural estratégico de água doce para todo o leste potiguar.',
       'Sua vastidão cria ondas suaves quando os ventos alísios do Atlântico sopram com intensidade.'
     ],
-    primaryImage: '/src/assets/images/lagoa_arituba_bonfim_1792776863783.jpg',
-    imageAlt: 'Imensa extensão de água azul cristalina da Lagoa do Bonfim em Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_e5264877.png',
+    imageAlt: 'Vista aérea da imensa lâmina de água azul da Lagoa do Bonfim na APA Bonfim-Guaraíras',
     gallery: [
-      '/src/assets/images/lagoa_arituba_bonfim_1792776863783.jpg',
+      '/assets/aistudio/image_e5264877.png',
       '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
@@ -399,11 +399,11 @@ export const ATTRACTIONS: Attraction[] = [
       'Histórias locais alimentam lendas sobre passagens subterrâneas e tesouros ocultos durante o período das invasões holandesas no Nordeste.',
       'O local é objeto de estudos acadêmicos sobre a tecnologia construtiva vernacular do período colonial potiguar.'
     ],
-    primaryImage: '/src/assets/images/hero_nisia_floresta_1792776861527.jpg',
-    imageAlt: 'Ruínas da histórica Casa de Pedra e antigos engenhos em Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_ba92c52b.png',
+    imageAlt: 'Vista aérea das ruínas históricas da Casa de Pedra em Nísia Floresta',
     gallery: [
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg',
-      '/src/assets/images/baoba_patrimonio_nisia_1792776863969.jpg'
+      '/assets/aistudio/image_ba92c52b.png',
+      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
       address: 'Região dos antigos engenhos, Zona Rural de Papary',
@@ -448,10 +448,10 @@ export const ATTRACTIONS: Attraction[] = [
       'O mirante natural proporciona uma vista panorâmica de quase 180 graus da linha da costa sul potiguar.',
       'A praia combina uma enseada mansa no trecho sul protegida por arrecifes com mar aberto excelente para o surfe no trecho norte.'
     ],
-    primaryImage: '/src/assets/images/praia_camurupim_arrecifes_1792776864492.jpg',
-    imageAlt: 'Mirante dos Golfinhos nas falésias de Tabatinga em Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_d175f08f.png',
+    imageAlt: 'Falésias avermelhadas e mar límpido da Praia de Tabatinga em Nísia Floresta',
     gallery: [
-      '/src/assets/images/praia_camurupim_arrecifes_1792776864492.jpg',
+      '/assets/aistudio/image_d175f08f.png',
       '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
@@ -497,10 +497,10 @@ export const ATTRACTIONS: Attraction[] = [
       'O acesso costuma ser feito por passeios ecológicos de bugue ou caminhadas orientadas por trilhas na areia.',
       'As rendeiras locais produzem toalhas, caminhos de mesa e peças de vestuário que são referência nacional de bordado tradicional.'
     ],
-    primaryImage: '/src/assets/images/lagoa_arituba_bonfim_1792776863783.jpg',
-    imageAlt: 'Lagoa de Alcaçuz com águas serenas e dunas ao redor em Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_f59b1861.png',
+    imageAlt: 'Vista aérea panorâmica da Lagoa de Alcaçuz cercada por dunas e orla de areia branca',
     gallery: [
-      '/src/assets/images/lagoa_arituba_bonfim_1792776863783.jpg',
+      '/assets/aistudio/image_f59b1861.png',
       '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
@@ -546,10 +546,10 @@ export const ATTRACTIONS: Attraction[] = [
       'Na maré baixa, surgem piscininhas naturais com dezenas de pequenos peixes coloridos que encantam os banhistas.',
       'O Carnaval tradicional e os festejos juninos de Barreta reúnem famílias e turistas ao som de marchinhas e forró pé-de-serra.'
     ],
-    primaryImage: '/src/assets/images/praia_camurupim_arrecifes_1792776864492.jpg',
-    imageAlt: 'Arrecifes e orla da Praia de Barreta em Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_83c3325b.png',
+    imageAlt: 'Orla da Praia de Barreta com quebra-mar de arrecifes e faixa de areia dourada',
     gallery: [
-      '/src/assets/images/praia_camurupim_arrecifes_1792776864492.jpg',
+      '/assets/aistudio/image_83c3325b.png',
       '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
@@ -595,11 +595,11 @@ export const ATTRACTIONS: Attraction[] = [
       'A caminhada entre os casarios conecta os principais monumentos da cidade: o Baobá, a Igreja Matriz, a Estação de Papary e o Museu Nísia Floresta.',
       'Em 1948, foi nessas mesmas ruas históricas que o povo celebrou a alteração do nome de Papary para o nome da ilustre escritora Nísia Floresta.'
     ],
-    primaryImage: '/src/assets/images/igreja_matriz_papary_1792776864527.jpg',
-    imageAlt: 'Conjunto de casarios coloniais preservados no centro de Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_efd0799a.png',
+    imageAlt: 'Casarios históricos e telhados coloniais do centro antigo de Nísia Floresta',
     gallery: [
-      '/src/assets/images/igreja_matriz_papary_1792776864527.jpg',
-      '/src/assets/images/baoba_patrimonio_nisia_1792776863969.jpg'
+      '/assets/aistudio/image_efd0799a.png',
+      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
       address: 'Rua Almirante Barroso e Praça Coronel José de Araújo',
@@ -644,11 +644,11 @@ export const ATTRACTIONS: Attraction[] = [
       'A profundidade aumenta de forma gradual e suave, tornando-a muito segura e acolhedora para crianças e idosos.',
       'Não há permissão para barcos a motor ou jet skis na lâmina principal, garantindo a tranquilidade acústica e a conservação da fauna aquática.'
     ],
-    primaryImage: '/src/assets/images/lagoa_carcara_aguas_1792778210928.jpg',
-    imageAlt: 'Águas translúcidas em tom esmeralda e areia alva na Lagoa do Carcará',
+    primaryImage: '/assets/aistudio/image_a7d06602.png',
+    imageAlt: 'Balanço decorado nas águas cristalinas e rasas da Lagoa do Carcará em Nísia Floresta',
     gallery: [
-      '/src/assets/images/lagoa_carcara_aguas_1792778210928.jpg',
-      '/src/assets/images/lagoa_arituba_bonfim_1792776863783.jpg'
+      '/assets/aistudio/image_a7d06602.png',
+      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
       address: 'Estrada Vicinal da Lagoa do Carcará, Zona Rural',
@@ -693,10 +693,10 @@ export const ATTRACTIONS: Attraction[] = [
       'O morro das dunas móveis atrás da praia proporciona um dos mirantes mais bonitos para contemplar o pôr do sol refletido no oceano.',
       'O nome "Búzios" faz referência às conchas de moluscos marinhos encontradas em grande quantidade nas praias da região pelos antigos moradores.'
     ],
-    primaryImage: '/src/assets/images/praia_buzios_costa_1792778211602.jpg',
-    imageAlt: 'Orla dourada e mar da Praia de Búzios em Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_9d5f84fa.png',
+    imageAlt: 'Vista panorâmica a partir das dunas da Praia de Búzios em Nísia Floresta',
     gallery: [
-      '/src/assets/images/praia_buzios_costa_1792778211602.jpg',
+      '/assets/aistudio/image_9d5f84fa.png',
       '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
@@ -742,10 +742,10 @@ export const ATTRACTIONS: Attraction[] = [
       'A vista a partir de Pirangi do Sul descortina a ponte sobre o Rio Pirangi e o contorno da costa até os parrachos.',
       'É ponto de partida tradicional para passeios de barco e jangada até os parrachos de Pirangi para mergulho livre.'
     ],
-    primaryImage: '/src/assets/images/praia_pirangi_do_sul_1792778212340.jpg',
-    imageAlt: 'Estuário do Rio Pirangi e barcos de pesca na Praia de Pirangi do Sul',
+    primaryImage: '/assets/aistudio/image_2624bde4.png',
+    imageAlt: 'Vista aérea panorâmica da foz do rio e enseada da Praia de Pirangi do Sul em Nísia Floresta',
     gallery: [
-      '/src/assets/images/praia_pirangi_do_sul_1792778212340.jpg',
+      '/assets/aistudio/image_2624bde4.png',
       '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
@@ -791,11 +791,11 @@ export const ATTRACTIONS: Attraction[] = [
       'A lagoa é refúgio de diversas espécies de aves aquáticas da mata atlântica potiguar, como garças, jaçanãs e martins-pescadores.',
       'É um dos pontos favoritos de ciclistas e praticantes de caminhada ecológica que percorrem as trilhas rurais entre as lagoas do município.'
     ],
-    primaryImage: '/src/assets/images/lagoa_boa_agua_1793901754729.jpg',
-    imageAlt: 'Águas cristalinas e coqueirais na Lagoa de Boa Água em Nísia Floresta',
+    primaryImage: '/assets/aistudio/image_c88e7ea0.png',
+    imageAlt: 'Águas límpidas e cristalinas da Lagoa de Boa Água em Nísia Floresta',
     gallery: [
-      '/src/assets/images/lagoa_boa_agua_1793901754729.jpg',
-      '/src/assets/images/lagoa_arituba_bonfim_1792776863783.jpg'
+      '/assets/aistudio/image_c88e7ea0.png',
+      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
     ],
     location: {
       address: 'Comunidade de Boa Água, Zona Rural',
