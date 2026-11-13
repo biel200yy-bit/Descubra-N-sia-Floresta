@@ -106,8 +106,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_13008830.png',
     imageAlt: 'Vista aérea panorâmica da Lagoa de Arituba em Nísia Floresta com orla de quiosques, pedalinhos e águas azuis',
     gallery: [
-      '/assets/aistudio/image_13008830.png',
-      '/src/assets/images/lagoa_de_arituba_nova_1793985909690.jpg'
+      '/assets/aistudio/image_13008830.png'
     ],
     location: {
       address: 'Estrada da Lagoa de Arituba, próximo à praia de Camurupim',
@@ -155,8 +154,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_ff274b7f.png',
     imageAlt: 'Vista aérea panorâmica da orla e arrecifes de arenito com piscinas naturais na Praia de Camurupim',
     gallery: [
-      '/assets/aistudio/image_ff274b7f.png',
-      '/src/assets/images/praia_camurupim_nova_1793985909958.jpg'
+      '/assets/aistudio/image_ff274b7f.png'
     ],
     location: {
       address: 'Avenida Beira Mar, Praia de Camurupim',
@@ -204,8 +202,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_559a04ba.png',
     imageAlt: 'Fachada oficial restaurada da Igreja Matriz de Nossa Senhora do Ó em Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_559a04ba.png',
-      '/assets/aistudio/image_b43c8050.png'
+      '/assets/aistudio/image_559a04ba.png'
     ],
     location: {
       address: 'Largo da Matriz, Centro Histórico',
@@ -253,8 +250,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_f52856f9.png',
     imageAlt: 'Fachada histórica restaurada da Estação Ferroviária de Papary (1881) em Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_f52856f9.png',
-      '/assets/aistudio/image_b43c8050.png'
+      '/assets/aistudio/image_f52856f9.png'
     ],
     location: {
       address: 'Rua da Estação, Centro',

@@ -28,12 +28,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background Image with carefully calibrated contrast scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/assets/aistudio/image_3f34caf3.png"
-          alt="Vista aérea do centro histórico de Nísia Floresta destacando a Igreja Matriz, praça arborizada e vegetação ao fundo"
+          src="/src/assets/images/capa_nisia_floresta_1794592847681.jpg"
+          alt="Vista aérea panorâmica em alta definição do centro histórico de Nísia Floresta destacando a Igreja Matriz de Nossa Senhora do Ó, praça central e mata preservada"
           className="w-full h-full object-cover object-center"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-stone-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/85 via-stone-950/55 to-stone-950/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/30 to-stone-900/30" />
       </div>
 
       {/* Hero content container */}
