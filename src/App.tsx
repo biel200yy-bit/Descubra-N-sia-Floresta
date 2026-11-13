@@ -13,17 +13,14 @@ import { HistorySection } from './components/HistorySection';
 import { InteractiveMapSection } from './components/InteractiveMapSection';
 import { TouristRoutesSection } from './components/TouristRoutesSection';
 import { CultureSection } from './components/CultureSection';
-import { CommunityParticipationModal } from './components/CommunityParticipationModal';
 import { AboutProjectSection } from './components/AboutProjectSection';
 import { Footer } from './components/Footer';
 
 import { ATTRACTIONS, Attraction } from './data/attractions';
-import { INITIAL_COMMUNITY_CONTRIBUTIONS, CommunityContribution } from './data/culture';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>('inicio');
   const [selectedAttraction, setSelectedAttraction] = useState<Attraction | null>(null);
-  const [isContributionModalOpen, setIsContributionModalOpen] = useState(false);
 
   // Search & category passed from Hero into Catalog
   const [activeCategoryFilter, setActiveCategoryFilter] = useState<string>('todas');
@@ -32,29 +29,6 @@ export default function App() {
   // Accessibility state
   const [textSize, setTextSize] = useState<'normal' | 'large'>('normal');
   const [highContrast, setHighContrast] = useState<boolean>(false);
-
-  // Community contributions stored in localStorage
-  const [communityContributions, setCommunityContributions] = useState<CommunityContribution[]>(() => {
-    try {
-      const saved = localStorage.getItem('nisia_floresta_contributions');
-      if (saved) {
-        return JSON.parse(saved);
-      }
-    } catch (e) {
-      console.error('Error loading stored contributions:', e);
-    }
-    return INITIAL_COMMUNITY_CONTRIBUTIONS;
-  });
-
-  const handleSaveContribution = (newContrib: CommunityContribution) => {
-    const updated = [newContrib, ...communityContributions];
-    setCommunityContributions(updated);
-    try {
-      localStorage.setItem('nisia_floresta_contributions', JSON.stringify(updated));
-    } catch (e) {
-      console.error('Error saving contribution to localStorage:', e);
-    }
-  };
 
   const handleSearchFromHero = (query: string) => {
     setActiveSearchQuery(query);
@@ -95,7 +69,6 @@ export default function App() {
       <Navbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
-        onOpenContribution={() => setIsContributionModalOpen(true)}
         textSize={textSize}
         setTextSize={setTextSize}
         highContrast={highContrast}
@@ -127,10 +100,7 @@ export default function App() {
               attractions={ATTRACTIONS}
               onSelectAttraction={(attr) => setSelectedAttraction(attr)}
             />
-            <CultureSection
-              onOpenContribution={() => setIsContributionModalOpen(true)}
-              communityContributions={communityContributions}
-            />
+            <CultureSection />
             <TouristRoutesSection
               onSelectAttractionById={handleSelectAttractionById}
             />
@@ -148,12 +118,7 @@ export default function App() {
 
         {activeTab === 'historia' && <HistorySection />}
 
-        {activeTab === 'cultura' && (
-          <CultureSection
-            onOpenContribution={() => setIsContributionModalOpen(true)}
-            communityContributions={communityContributions}
-          />
-        )}
+        {activeTab === 'cultura' && <CultureSection />}
 
         {activeTab === 'roteiros' && (
           <TouristRoutesSection
@@ -177,7 +142,6 @@ export default function App() {
           setActiveTab(tab);
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
-        onOpenContribution={() => setIsContributionModalOpen(true)}
       />
 
       {/* Detailed Attraction Modal */}
@@ -185,13 +149,6 @@ export default function App() {
         attraction={selectedAttraction}
         onClose={() => setSelectedAttraction(null)}
         onSelectRelated={(related) => setSelectedAttraction(related)}
-      />
-
-      {/* Community Contribution Modal */}
-      <CommunityParticipationModal
-        isOpen={isContributionModalOpen}
-        onClose={() => setIsContributionModalOpen(false)}
-        onSubmitContribution={handleSaveContribution}
       />
     </div>
   );

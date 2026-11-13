@@ -3,10 +3,9 @@ import { Compass, BookOpen, Heart, GraduationCap, MapPin, Shield } from 'lucide-
 
 interface FooterProps {
   onNavigateTo: (tabId: string) => void;
-  onOpenContribution: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onNavigateTo, onOpenContribution }) => {
+export const Footer: React.FC<FooterProps> = ({ onNavigateTo }) => {
   return (
     <footer className="bg-stone-900 text-stone-300 pt-16 pb-12 border-t border-stone-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
@@ -98,23 +97,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigateTo, onOpenContribution
             </ul>
           </div>
 
-          {/* Community & Preservation */}
+          {/* Preservation */}
           <div className="lg:col-span-4 space-y-3">
             <div className="font-serif font-bold text-white text-sm uppercase tracking-wider mb-2">
-              Participação & Preservação
+              Preservação & Patrimônio
             </div>
             <p className="text-xs text-stone-400 leading-relaxed">
-              Você é morador, pesquisador ou possui relatos históricos sobre a antiga Vila de Papary ou os atrativos de Nísia Floresta? Contribua com nosso acervo digital.
+              O turismo consciente garante a conservação da história e da biodiversidade de Nísia Floresta para as futuras gerações.
             </p>
-            <div>
-              <button
-                onClick={onOpenContribution}
-                className="mt-2 px-4 py-2 bg-sky-800 hover:bg-sky-700 text-white text-xs font-semibold rounded-md transition-colors cursor-pointer"
-              >
-                Enviar relato ou novo atrativo
-              </button>
-            </div>
-            <div className="pt-3 text-[11px] text-stone-400">
+            <div className="pt-1 text-xs text-stone-400 leading-relaxed">
               Preserve o patrimônio: respeite as construções históricas e não polua as lagoas e arrecifes.
             </div>
           </div>

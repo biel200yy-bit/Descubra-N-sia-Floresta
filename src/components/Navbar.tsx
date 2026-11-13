@@ -4,7 +4,6 @@ import { Menu, X, Compass, Sun, Moon, Volume2, Type } from 'lucide-react';
 interface NavbarProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
-  onOpenContribution: () => void;
   textSize: 'normal' | 'large';
   setTextSize: (size: 'normal' | 'large') => void;
   highContrast: boolean;
@@ -14,7 +13,6 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   activeTab,
   setActiveTab,
-  onOpenContribution,
   textSize,
   setTextSize,
   highContrast,
@@ -70,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
       </div>
 
-      {/* Main Top Bar following Top Bar Contract: Brand, Nav links, 1 Primary Action */}
+      {/* Main Top Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-8">
         {/* Zone 1: Single text element wordmark */}
         <button
@@ -81,7 +79,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <span>Descubra Nísia Floresta</span>
         </button>
 
-        {/* Zone 2: 4-5 single line text links */}
+        {/* Zone 2: Single line text links */}
         <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-stone-600">
           {navLinks.map((link) => {
             const isActive = activeTab === link.id;
@@ -100,16 +98,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             );
           })}
         </nav>
-
-        {/* Zone 3: 1 primary action */}
-        <div className="hidden sm:flex items-center gap-3 shrink-0">
-          <button
-            onClick={onOpenContribution}
-            className="px-4 py-2 text-xs font-semibold text-white bg-sky-800 hover:bg-sky-900 rounded-md transition-colors whitespace-nowrap shrink-0 shadow-sm cursor-pointer flex items-center gap-2"
-          >
-            <span>Contribuir com Acervo</span>
-          </button>
-        </div>
 
         {/* Mobile menu button */}
         <div className="lg:hidden flex items-center gap-2">
@@ -137,17 +125,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               {link.label}
             </button>
           ))}
-          <div className="pt-3 border-t border-stone-200">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenContribution();
-              }}
-              className="w-full py-2.5 px-4 text-center text-sm font-semibold text-white bg-sky-800 hover:bg-sky-900 rounded-md cursor-pointer"
-            >
-              Contribuir com Acervo
-            </button>
-          </div>
         </div>
       )}
     </header>

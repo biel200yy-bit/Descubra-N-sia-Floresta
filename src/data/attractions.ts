@@ -55,10 +55,9 @@ export const ATTRACTIONS: Attraction[] = [
       'O exemplar floresce anualmente com flores brancas pendulares que desabrocham no entardecer e atraem polinizadores noturnos.'
     ],
     primaryImage: '/assets/aistudio/image_b43c8050.png',
-    imageAlt: 'Fotografia real do Baobá centenário de Nísia Floresta com placa informativa e grade de proteção',
+    imageAlt: 'Baobá Centenário de Nísia Floresta plantado em 1877 com placa indicativa e grade de proteção na praça central',
     gallery: [
-      '/assets/aistudio/image_b43c8050.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_b43c8050.png'
     ],
     location: {
       address: 'Praça Coronel José de Araújo, Centro Histórico',
@@ -303,8 +302,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_cd4e5206.png',
     imageAlt: 'Fachada histórica amarela do Museu e Memorial Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_cd4e5206.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_cd4e5206.png'
     ],
     location: {
       address: 'Rua Almirante Barroso, Centro',
@@ -353,8 +351,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_e5264877.png',
     imageAlt: 'Vista aérea da imensa lâmina de água azul da Lagoa do Bonfim na APA Bonfim-Guaraíras',
     gallery: [
-      '/assets/aistudio/image_e5264877.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_e5264877.png'
     ],
     location: {
       address: 'APA Bonfim-Guaraíras, Estrada de Acesso ao Bonfim',
@@ -402,8 +399,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_ba92c52b.png',
     imageAlt: 'Vista aérea das ruínas históricas da Casa de Pedra em Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_ba92c52b.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_ba92c52b.png'
     ],
     location: {
       address: 'Região dos antigos engenhos, Zona Rural de Papary',
@@ -451,8 +447,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_d175f08f.png',
     imageAlt: 'Falésias avermelhadas e mar límpido da Praia de Tabatinga em Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_d175f08f.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_d175f08f.png'
     ],
     location: {
       address: 'Alto das Falésias, Mirante de Tabatinga',
@@ -500,8 +495,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_f59b1861.png',
     imageAlt: 'Vista aérea panorâmica da Lagoa de Alcaçuz cercada por dunas e orla de areia branca',
     gallery: [
-      '/assets/aistudio/image_f59b1861.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_f59b1861.png'
     ],
     location: {
       address: 'Distrito de Alcaçuz, Região das Dunas',
@@ -549,8 +543,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_83c3325b.png',
     imageAlt: 'Orla da Praia de Barreta com quebra-mar de arrecifes e faixa de areia dourada',
     gallery: [
-      '/assets/aistudio/image_83c3325b.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_83c3325b.png'
     ],
     location: {
       address: 'Orla de Barreta, extremo sul do município',
@@ -598,8 +591,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_efd0799a.png',
     imageAlt: 'Casarios históricos e telhados coloniais do centro antigo de Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_efd0799a.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_efd0799a.png'
     ],
     location: {
       address: 'Rua Almirante Barroso e Praça Coronel José de Araújo',
@@ -647,8 +639,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_a7d06602.png',
     imageAlt: 'Balanço decorado nas águas cristalinas e rasas da Lagoa do Carcará em Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_a7d06602.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_a7d06602.png'
     ],
     location: {
       address: 'Estrada Vicinal da Lagoa do Carcará, Zona Rural',
@@ -696,8 +687,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_9d5f84fa.png',
     imageAlt: 'Vista panorâmica a partir das dunas da Praia de Búzios em Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_9d5f84fa.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_9d5f84fa.png'
     ],
     location: {
       address: 'Avenida Beira Mar, Praia de Búzios',
@@ -745,8 +735,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_2624bde4.png',
     imageAlt: 'Vista aérea panorâmica da foz do rio e enseada da Praia de Pirangi do Sul em Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_2624bde4.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_2624bde4.png'
     ],
     location: {
       address: 'Foz do Rio Pirangi, Litoral Norte de Nísia Floresta',
@@ -794,8 +783,7 @@ export const ATTRACTIONS: Attraction[] = [
     primaryImage: '/assets/aistudio/image_c88e7ea0.png',
     imageAlt: 'Águas límpidas e cristalinas da Lagoa de Boa Água em Nísia Floresta',
     gallery: [
-      '/assets/aistudio/image_c88e7ea0.png',
-      '/src/assets/images/hero_nisia_floresta_1792776861527.jpg'
+      '/assets/aistudio/image_c88e7ea0.png'
     ],
     location: {
       address: 'Comunidade de Boa Água, Zona Rural',
