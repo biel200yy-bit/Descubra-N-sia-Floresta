@@ -28,7 +28,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background Image with carefully calibrated contrast scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/assets/images/hero_nisia_floresta_1792776861527.jpg"
+          src="/assets/aistudio/image_b43c8050.png"
           alt="Paisagem aérea de Nísia Floresta com lagoas cristalinas, dunas e mar potiguar"
           className="w-full h-full object-cover object-center"
           referrerPolicy="no-referrer"
